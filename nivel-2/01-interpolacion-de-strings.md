@@ -33,7 +33,21 @@ function print (first, last) {
 
 ## Desafios
 
-1. Construye una petición HTTP donde uses interpolación de strings para enviar los parámetros
+1. Crea una función que acepte un número como parámetro y usando interpolación de strings
+retorna el doble de ese número
+
+Solución
+```javascript
+function double (number) {
+  const prod = `${number * 2}`;
+  // teniendo en cuenta que en nuestro HTML tenemos un tag con id igual a msg
+  // por ejemplo <h2 id="msg"></h2>
+  document.getElementById('msg').innerHTML = prod;
+}
+double(6); // 12
+```
+
+2. Construye una petición HTTP donde uses interpolación de strings para enviar los parámetros
 
 Solución
 ```javascript
