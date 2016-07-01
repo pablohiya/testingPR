@@ -4,9 +4,9 @@
 
 Procesar cada elemento de una colección es una operación recurrente. ECS6 introduce nuevos metodos para iterar sobre arreglos, eston son:
 
-	* Array.prototype.entries()
-	* Array.prototype.keys()
-	* Array.prototype.values()
+- Array.prototype.entries()
+- Array.prototype.keys()
+- Array.prototype.values()
 
 El resultado de dichas funciones es una secuencia de valores accesibles por medio de un iterador, aunque podemos convertirlo a un array para su visualización.
 
