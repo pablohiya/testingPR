@@ -4,8 +4,6 @@
 
 ES6 cuenta con un nuevo método para repetir strings: repeat()
 
-<< Desarrollo >>
-
 ### ES5
 
 ```javascript
@@ -29,3 +27,4 @@ asegúrate de dejar espacio entre palabra y palabra.
 ```javascript
 console.log('doo '.repeat(3)); // doo doo doo
 ```
+de
