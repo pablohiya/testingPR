@@ -23,7 +23,7 @@ function print (first, last) {
 ```javascript
 function print (first, last) {
   // el string completo debe ser encerrado en (` `) caracter
-  // y las variables dentro de llaves precedidas por el signo de dolar
+  // y las variables deben ir dentro de llaves precedidas por el signo dólar "$"
   const msg = `Welcome ${first} ${last} !`;
   // teniendo en cuenta que en nuestro HTML tenemos un tag con id igual a msg
   // por ejemplo <h2 id="msg"></h2>
