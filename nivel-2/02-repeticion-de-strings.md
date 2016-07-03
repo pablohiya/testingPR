@@ -2,7 +2,7 @@
 
 ## Introducción
 
-ES6 cuenta con un nuevo método para repetir strings: repeat()
+ES6 cuenta con un nuevo método para repetir strings: el método repeat().
 
 ### ES5
 
@@ -14,7 +14,7 @@ console.log('foo'.repeat(4)); // foofoofoofoo
 ```
 
 ### ES6
-ES6 ya cuenta con el método repeat por defecto
+ES6 ya cuenta con el método repeat() por defecto
 ```javascript
 console.log('foo'.repeat(4)); // foofoofoofoo
 ```
