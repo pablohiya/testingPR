@@ -36,7 +36,9 @@ que significa que buscará desde el comienzo del string.
 ## Desafios
 
 1. Dado el string
+```javascript
 let str = 'To be, or not to be, that is the question.';
+```
 realiza una búsqueda del string "not to be", ingresando el parámetro position
 y asegurate que el resultado sea true.
 
