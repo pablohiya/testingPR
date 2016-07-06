@@ -6,7 +6,7 @@ ECMAScript cuenta con un [API de Internacionalización](http://norbertlindenberg
 incluye el objeto
 ```javascript
 Intl.NumberFormat
-```
+``
 que permite el formateo de números.
 
 ### ES5 & ES6
@@ -17,8 +17,9 @@ new Intl.NumberFormat([locales][, options])
 ```
 Donde "locales" es un parámetro opcional, el cual es un array de strings que contiene
 uno o más idiomas.
+
 El parámetro "options" es tambien opcional, y es un objeto con propiedades como estilos, moneda
-entre otros, que no veremos aun en este capítulo.
+entre otros, que no veremos en este capítulo.
 
 A continuación presentamos algunos ejemplos:
 
