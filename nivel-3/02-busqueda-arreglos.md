@@ -34,7 +34,7 @@ console.log(names.some(function(currentItem) {
 ```javascript
 const names = [{name: 'chris'}, {name: 'derek'}, {name: 'tony'}];
 
-console.log(names.find(function(currentItem) {
+console.log(names.find( currentItem => {
 	return currentItem.name === 'derek';
 })); // {name: 'derek'}
 
@@ -58,7 +58,7 @@ console.log(namesAux.indexOf('derek')); // 1
 ```javascript
 const names = [{name: 'chris'}, {name: 'derek'}, {name: 'tony'}];
 
-console.log(names.findIndex(function(currentItem) {
+console.log(names.findIndex( currentItem => {
 	return currentItem.name === 'derek';
 })); // 1
 ```
