@@ -2,16 +2,24 @@
 
 ## Introducción
 
-Procesar cada elemento de una colección es una operación recurrente. ECS6 introduce nuevos metodos para iterar sobre arreglos, eston son:
+Procesar cada elemento de una colección es una operación recurrente. ES6 introduce nuevos métodos para iterar sobre arreglos, estos son:
 
 - Array.prototype.entries()
 - Array.prototype.keys()
 - Array.prototype.values()
 
-El resultado de dichas funciones es una secuencia de valores accesibles por medio de un iterador, aunque podemos convertirlo a un array para su visualización.
+El resultado de dichas funciones es una secuencia de valores accesibles por medio de un iterador, aunque podemos convertirlo a un arreglo para su visualización.
 
 ## Array.Prototype.keys
-El método keys() retorna un nuevo objeto iterador que contiene la clave correspondiente a cada indice en el arreglo.
+El método keys() retorna un nuevo objeto iterador que contiene la clave correspondiente a cada índice en el arreglo.
+
+### ES5
+En ES5 se puede utilizar el método Object.keys pasando un arreglo como argumento en vez de un objeto. 
+```javascript
+var names = ['chris', 'derek', 'tony'];
+
+console.log(Object.keys(names)); // ['0', '1', '2']
+```
 
 ### ES6
 ```javascript
@@ -26,7 +34,10 @@ console.log([...names.keys()]); // [0, 1, 2]
 ```
 
 ## Array.Prototype.values
-El método values() retorna un nuevo objeto iterador que contiene el valor correspondiente a cada indice en el arreglo.
+El método values() retorna un nuevo objeto iterador que contiene el valor correspondiente a cada índice en el arreglo.
+
+### ES5
+No existe un método estandar similar para lograr el mismo resultado.
 
 ### ES6
 ```javascript
@@ -41,7 +52,10 @@ console.log([...names.values()]); // ['chris', 'derek', 'tony']
 ```
 
 ## Array.Prototype.entries
-El método entries() retorna un nuevo objeto iterador que contiene el par clave/valor correspondiente a cada indice en el arreglo.
+El método entries() retorna un nuevo objeto iterador que contiene el par clave/valor, en forma de arrreglo bidimensional, correspondiente a cada índice en el arreglo.
+
+### ES5
+No existe un método estandar similar para lograr el mismo resultado.
 
 ### ES6
 ```javascript
@@ -56,7 +70,7 @@ console.log([...names.entries()]); // [[0, 'chris'], [1, 'derek'], [2, 'tony']]
 ```
 
 ## Desafíos
-Utilizar for-of-loop para imprimir el resultado de cada elemento asociado al iterador devuelto por alguna de las funciones mencionadas anteriormente.
+- Utilizar alguna de las funciones mencionadas anteriormente junto con el for-of-loop para imprimir el valor de cada elemento asociado al iterador devuelto.
 
 ### Solución
 ```javascript
@@ -67,3 +81,10 @@ for (let value of names.values()) {
 }
 ```
 
+- Analizar si el método Array.prototype.keys ignora o no los 'huecos'.
+
+### Solución
+```javascript
+console.log([...new Array(3).keys()]); // [0, 1, 2] no ignora los huecos.
+console.log(Object.keys(new Array(3))); // [] ignora los huecos
+```
