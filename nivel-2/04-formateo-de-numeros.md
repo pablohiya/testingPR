@@ -43,7 +43,7 @@ console.log(new Intl.NumberFormat('de-DE').format(number));
 1. Intenta formatear un número a un lenguaje que no sea soportado, por ejemplo Balinés,
 e incluye un lenguaje por defecto que si sea soportado, en este caso el Japonés.
 
-Tip: recuerda que locale es un array de idiomas.
+  Tip: recuerda que locale es un array de idiomas.
 
 ```javascript
 let number = 123456.789;
