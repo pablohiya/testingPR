@@ -25,23 +25,24 @@ A continuación presentamos algunos ejemplos:
 
 ```javascript
 let number = 3500;
-// Si no especificamos el parámetro locale, el formato del lenguaje será el usado por defecto en nuestra interfaz de usuario de nuestra aplicación
+// Si no especificamos el parámetro locale, el formato del lenguaje será el usado por defecto en la interfaz de usuario de nuestra aplicación
 console.log(new Intl.NumberFormat().format(number));
-// → '3,500' en caso que nuestro locale sea US English
+// → '3,500' en caso que nuestro locale por defecto sea US English
 ```
 
 ```javascript
 let number = 123456.789;
 
-// El idioma Alemán usa coma como separador de decimales y punto para miles.
+// El idioma Alemán usa la coma para separar decimales y punto para separar milésimas.
 console.log(new Intl.NumberFormat('de-DE').format(number));
 // → 123.456,789
 ```
 
-## Desafios
+## Desafío
 
-1. Intenta formatear un número a un lenguaje que no sea soportado por ejemplo Balinés,
-e incluye un lenguaje por defecto, en este caso el Japonés
+1. Intenta formatear un número a un lenguaje que no sea soportado, por ejemplo Balinés,
+e incluye un lenguaje por defecto que si sea soportado, en este caso el Japonés.
+Tip: recuerda que locale es un array de idiomas.
 
 ```javascript
 let number = 123456.789;
