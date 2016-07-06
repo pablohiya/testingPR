@@ -6,7 +6,7 @@ ECMAScript cuenta con un [API de Internacionalización](http://norbertlindenberg
 incluye el objeto
 ```javascript
 Intl.NumberFormat
-``
+```
 que permite el formateo de números.
 
 ### ES5 & ES6
