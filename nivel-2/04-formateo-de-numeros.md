@@ -40,7 +40,16 @@ console.log(new Intl.NumberFormat('de-DE').format(number));
 
 ## Desafío
 
-1. Intenta formatear un número a un lenguaje que no sea soportado, por ejemplo Balinés,
+1. Formatea un número al portugués de Portugal.
+
+```javascript
+let number = 123.89;
+
+console.log(new Intl.NumberFormat('pt-PT').format(number));
+// → 123,89
+```
+
+2. Intenta formatear un número a un lenguaje que no sea soportado, por ejemplo Balinés,
 e incluye un lenguaje por defecto que si sea soportado, en este caso el Japonés.
 
   Tip: recuerda que "locale" es un array de idiomas.
