@@ -17,7 +17,7 @@ if (str.indexOf("wOrld") !== -1) {
 
 ### ES6
 
-La sintaxis del método includes es la siguiente:
+La sintaxis del método includes() es la siguiente:
 ```javascript
 str.includes(searchString[, position])
 ```
