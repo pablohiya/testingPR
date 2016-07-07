@@ -57,9 +57,13 @@ console.log(namesAux.indexOf('derek')); // 1
 ### ES6
 ```javascript
 const names = [{name: 'chris'}, {name: 'derek'}, {name: 'tony'}];
+const namesAux = ['chris', 'derek', 'tony'];
 
 console.log(names.findIndex( currentItem => {
-	return currentItem.name === 'derek';
+  return currentItem.name === 'derek';
+})); // 1
+console.log(namesAux.findIndex( currentItem => {
+  return currentItem === 'derek';
 })); // 1
 ```
 
