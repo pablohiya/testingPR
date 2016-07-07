@@ -73,7 +73,7 @@ const people = [
 ];
 ```
 
-### 1- Retornar la primer persona masculina cuya posición no sea par.
+##### 1- Retornar la primer persona masculina cuya posición no sea par.
 
 ### Solución
 
@@ -83,7 +83,7 @@ console.log(people.find( (person, index) => {
 })); // {name: 'chris', genre: 'M'}
 ```
 
-### 2 - Insertar una nueva persona en la lista llamada 'marcus' despues de 'serena'.
+##### 2 - Insertar una nueva persona en la lista llamada 'marcus' despues de 'serena'.
 
 ### Solución
 
