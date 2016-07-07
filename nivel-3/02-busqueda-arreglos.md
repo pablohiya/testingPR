@@ -64,4 +64,37 @@ console.log(names.findIndex( currentItem => {
 ```
 
 ## Desafíos
-In progress...
+Dada la siguiente lista:
+
+```javascript
+const people = [
+    {name: 'tony', genre: 'M'}, {name: 'marie', genre: 'F'}, { name: 'serena', genre: 'F'},
+    {name: 'katy', genre:'F'}, {name: 'derek', genre: 'M'}, {name: 'chris', genre: 'M'}
+];
+```
+
+### 1- Retornar la primer persona masculina cuya posición no sea par.
+
+### Solución
+
+```javascript
+console.log(people.find( (person, index) => {
+  return person.genre === 'M' && ( index % 2 ) != 0;
+})); // {name: 'chris', genre: 'M'}
+```
+
+### 2 - Insertar una nueva persona en la lista llamada 'marcus' despues de 'serena'.
+
+### Solución
+
+```javascript
+const index = people.findIndex( person => {
+  return person.name === 'serena'
+});
+people.splice(index + 1, 0, {name: 'marcus', genre: 'M'});
+/* people is now
+	[{name: 'tony', genre: 'M'}, {name: 'marie', genre: 'F'}, { name: 'serena', genre: 'F'},
+    {name: 'marcus', genre:'M'}, {name: 'katy', genre:'F'}, {name: 'derek', genre: 'M'},
+    {name: 'chris', genre: 'M'}]
+*/
+```
