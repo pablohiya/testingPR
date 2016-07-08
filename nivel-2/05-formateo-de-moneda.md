@@ -1,4 +1,4 @@
-# Formateo de números
+# Formateo de moneda
 
 ## Introducción
 Para el formateo de moneda utilizaremos el mismo [API de Internacionalización](http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html) que utilizamos previamente para el formateo de números.
