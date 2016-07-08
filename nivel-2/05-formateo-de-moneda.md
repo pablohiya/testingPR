@@ -12,6 +12,8 @@ new Intl.NumberFormat([locales][, options])
 Para formatear moneda usaremos el argumento "options", donde agregaremos en el objeto
 las propiedades {style: 'currency', currency: 'aquí especificaremos el tipo de moneda'}
 
+En el siguiente ejemplo vamos a formatear un número al idioma alemán y la moneda al euro.
+
 ```javascript
 let number = 123456.789;
 
