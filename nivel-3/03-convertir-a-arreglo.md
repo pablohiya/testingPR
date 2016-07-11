@@ -9,12 +9,8 @@ Permitir convertir en un arreglo otros tipos de datos de forma trivial era una f
 Este método acepta varios tipos de datos como entrada, pero su uso frecuente es mapear objetos iterables y objetos array-like en un tipo de dato arreglo, como por ejemplo sobre consultas en el DOM.
 
 ```javascript
-let mySet = new Set();
-mySet.add('chris');
-mySet.add({ foo: 'bar'});
-mySet.add(5);
-console.log(Array.from(mySet)); //Ejemplo sobre objeto iterador
-// ['chris', {foo: 'bar'}, 5]
+console.log(Array.from('chris')); //Ejemplo sobre objeto iterador
+// ['c', 'h', 'r', 'i', 's']
 
 console.log(Array.from((document.querySelectorAll('ul li'))) //Ejemplo sobre un objeto array-like
 // [<li>, <li>, ...]
