@@ -1,10 +1,12 @@
 # Formateo de fechas
 
 ## Introducción
-Para el formateo de fechas utilizaremos el mismo [API de Internacionalización](http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html) que utilizamos previamente para el formateo de números y moneda, pero esta vez utilizaremos el objeto
+ECMAScript cuenta con un [API de Internacionalización](http://norbertlindenberg.com/2012/12/ecmascript-internationalization-api/index.html), el cual
+incluye el objeto
 ```javascript
 Intl.DateTimeFormat
-```
+``
+que permite el formateo de fechas.
 
 ### ES5 & ES6
 
@@ -33,7 +35,7 @@ console.log(new Intl.DateTimeFormat('en-US').format(date));
 
 ## Desafío
 
-1. Formatea una fecha al idoma alemán.
+1. Formatear una fecha al idioma alemán.
 
 ```javascript
 var date = new Date("2015-01-02");
