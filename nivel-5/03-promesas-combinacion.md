@@ -54,3 +54,8 @@ getUser('user')
   .then(getLikedpagesByUser)
   .then(ui.showFriends, ui.showError)
 ```
+## Desafíos
+
+1- Utilizando la función `getData` escrita para los desafíos del capítulo anterior, encadenar dos llamadas consecutivas, mostrando la salida de la última llamada por consola.
+
+2-

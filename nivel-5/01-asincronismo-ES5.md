@@ -94,3 +94,10 @@ getUser('user', function(err, user) {
   }
 });
 ```
+### Desafíos
+
+1- Crear una función `getData` que simule una llamada asincrónica, y acepte un callback para manejar la respuesta. Testear su correctitud invocándola y mostrando la respuesta por consola.
+
+2- Invocar a `getData` una segunda vez, luego de haber recibido la respuesta de haber invocado a `getData` una vez. Mostrar la respuesta por consola.
+
+3- Llamar a `getData` dos veces paralelamente. Mostrar por consola 'Se recibió una respuesta' cuando se haya recibido la respuesta de una llamada.

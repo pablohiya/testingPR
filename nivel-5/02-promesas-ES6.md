@@ -22,3 +22,9 @@ const promiseForResult = getUser('user');
 promiseForResult.then(updateUI);
 promiseForResult.catch(showErrorMessage);
 ```
+
+## Desafíos
+
+1- Crear una función `getData` que simule una operación asincrónica, y que retorne una promesa. Invocarla y mostrar su respuesta por consola.
+
+2- Crear una función `getDataWithError` que simule una operación asincrónica que falle. Invocarla, capturar el error y mostrarlo por consola.
