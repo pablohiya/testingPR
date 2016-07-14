@@ -13,7 +13,7 @@ Como resultado de la aplicación de este patrón, se logra simplificar el códig
 síncrona, dotándolo principalmente de [composición funcional y propagación de errores](https://blog.domenic.me/youre-missing-the-point-of-promises/).
 
 ## Ejemplos
-En el siguiente ejemplo, la operación asincrónica `getUser` retorna una Promesa, que un inicio está en espera, y que
+En el siguiente ejemplo, la operación asincrónica `getUser` retorna una Promesa, que en un inicio está en espera, y que
 más tarde puede ser resuelta o rechazada. A través de los métodos `then` y `catch` es posible actuar en consecuencia
 de ambos casos, mediante el pasaje de callbacks.
 

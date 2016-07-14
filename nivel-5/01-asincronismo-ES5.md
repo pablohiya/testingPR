@@ -5,7 +5,7 @@ En el ambiente de un explorador web, se cuenta con un sólo thread de ejecución
 Esto significa que para mantener una interacción fluida con el usuario, este thread
 no puede ser bloqueado. Con este propósito, y valiéndose de que en JavaScript las
 funciones son objetos de primer orden, los exploradores exponen parte de su funcionalidad
-a través de APIs asincrónicas, como XHR, User Event Listeners, etc.
+a través de APIs asincrónicas, como XHR, User Event Listeners, entre otras.
 ## Callbacks - Enfoque tomado en ES5
 Las operaciones asíncronas mencionadas anteriormente se manejan a través de un sistema
 de eventos. Esto requiere el registro de una función que será invocada ante la llegada
@@ -13,19 +13,19 @@ de un mensaje esperado.
 ``` javascript
 const el = document.querySelector('.btn');
 el.addEventListener('click', function() {
-  console.log('click')
+  //handle click
 }, false)
 ```
-Ante la ocurrencia un error durante la ejecución de la operación asíncrona, no es
+Ante la ocurrencia de un error durante la ejecución de la operación asíncrona, no es
 posible tratarlo mediante el clásico `try/catch`, ya que la falla en cuestión está fuera
 del alcance en el contexto del programa. La forma de solucionar este tipo de situaciones es
 mediante el pasaje de una función extra, para manejar el caso de error.
 
 ``` javascript
 getData(function(data){
-  console.log(data);
+  // show data
 }, function(error){
-  console.log('Ocurrió un error: ' + error);
+  // handle error
 });
 ```
 Con este enfoque, se resuelve el problema de responder a operaciones de larga espera, sin
