@@ -98,6 +98,53 @@ getUser('user', function(err, user) {
 
 1- Crear una función `getData` que simule una llamada asincrónica, y acepte un callback para manejar la respuesta. Testear su correctitud invocándola y mostrando la respuesta por consola.
 
+#### Solución
+```javascript
+function getData(callback) {
+  const randomTime = (Math.floor(Math.random() * 5) + 1) * 100;
+  setTimeout(function() {
+    callback(randomTime);
+}, randomTime);
+}
+
+getData(function(data) {
+  console.log(data);
+});
+
+//10
+```
+
 2- Invocar a `getData` una segunda vez, luego de haber recibido la respuesta de haber invocado a `getData` una vez. Mostrar la respuesta por consola.
 
+#### Solución
+```javascript
+getData(function(data) {
+  getData(function(data2){
+    console.log(data + data2);
+  });
+});
+
+//20
+```
+
 3- Llamar a `getData` dos veces paralelamente. Mostrar por consola 'Se recibió una respuesta' cuando se haya recibido la respuesta de una llamada.
+
+#### Solución
+```javascript
+const data1
+const data2;
+
+getData(function(data) {
+  data1 = data;
+  if (!data2) {
+    console.log('Se recibió una respuesta');
+  }
+});
+
+getData(function(data) {
+  data2 = data;
+  if (!data1) {
+    console.log('Se recibió una respuesta');
+  }
+});
+```

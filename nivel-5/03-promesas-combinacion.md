@@ -58,4 +58,43 @@ getUser('user')
 
 1- Utilizando la función `getData` escrita para los desafíos del capítulo anterior, encadenar dos llamadas consecutivas, mostrando la salida de la última llamada por consola.
 
-2-
+#### Solución
+```javascript
+getData()
+  .then(function(data) {
+    return getData();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
+```
+
+2- Utilizando la función `getData` escrita para los desafíos del capítulo anterior, invocar la función dos veces, y mostrar por consola 'Se recibió una respuesta' cuando la primera promesa haya sido resuelta.
+
+#### Solución
+```javascript
+Promise.race([
+  getData(),
+  getData()
+]).then(function(results){
+  console.log('Se recibió una respuesta');
+});
+
+```
+
+3- De la misma manera que en el ejercicio 1, encadenar una serie de llamadas a `getData`. En uno de los callbacks, provocar un error que dispare una excepción. Capturar la excepción utilizando error bubbling.
+
+#### Solución
+```javascript
+getData()
+  .then(function(data) {
+    return nonDefinedVariable;
+  })
+  .then(function(data) {
+    console.log(data);
+  })
+  .catch(function(error){
+    console.log(error);
+  })
+});
+```

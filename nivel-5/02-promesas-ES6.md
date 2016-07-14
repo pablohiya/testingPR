@@ -22,9 +22,41 @@ const promiseForResult = getUser('user');
 promiseForResult.then(updateUI);
 promiseForResult.catch(showErrorMessage);
 ```
-
 ## Desafíos
 
 1- Crear una función `getData` que simule una operación asincrónica, y que retorne una promesa. Invocarla y mostrar su respuesta por consola.
 
+#### Solución
+```javascript
+function getData() {
+  const randomTime = (Math.floor(Math.random() * 5) + 1) * 100;
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve(randomTime);
+    }, randomTime);
+  });
+}
+
+getData().then(function(data) {
+  console.log(data);
+});
+```
+
 2- Crear una función `getDataWithError` que simule una operación asincrónica que falle. Invocarla, capturar el error y mostrarlo por consola.
+
+
+#### Solución
+```javascript
+function getDataWithError() {
+  const randomTime = (Math.floor(Math.random() * 5) + 1) * 100;
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      reject(randomTime);
+    }, randomTime);
+  });
+}
+
+getDataWithError().catch(function(data) {
+  console.log(data);
+});
+```
