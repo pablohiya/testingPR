@@ -19,14 +19,14 @@ const firulais = new Dog();
 firulais.talk() // "woof"
 ```
 
-Aquí se ha creado la clase Dog. En su constructor, él asigna una propiedad a sí mismo llamada "sound". La clase tambien tiene un método "talk" el cual usa a "sound".
+Aquí se ha creado la clase Dog. En su constructor, él asigna una propiedad a sí mismo llamada "sound". La clase tambien tiene un método talk() el cual usa a "sound".
 
-Luego se ha creado un perro, firulais, el cual al llamar el método talk(), imprime correctamente la palabra "woof".
+Luego se ha creado una instancia de la clase Dog, firulais, el cual al llamar el método talk(), imprime correctamente la palabra "woof".
 
 ## Desafios
 
 1. Crear una clase llamada Animal, donde en su constructor se asigne una propiedad
-llamada "mammal" con valor true. Luego crea dos métodos llamados bark() y meow(), los cuales imprimirán en consola "woof" y "meau" respectivamente, luego crear dos instancias de la clase Animal, una llamada "dog" que invocará el método bark() y otra llamada "cat" que invocará el método meow().
+llamada "mammal" con valor true. Luego crea dos métodos llamados bark() y meow(), los cuales imprimirán en consola "woof" y "meau" respectivamente, después de eso crear dos instancias de la clase Animal, una llamada "dog" que invocará el método bark() y otra llamada "cat" que invocará el método meow().
 
 ```javascript
 class Animal {
