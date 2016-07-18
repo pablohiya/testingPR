@@ -10,3 +10,71 @@ El estándar ES6 define una interfaz por la cual es posible implementar módulos
 A través de la cláusula `import` es posible tomar lo exportado por otro módulo, y hacerlo disponible como una variable local, con la posiblidad de renombrar si es necesario para evitar conflictos.
 
 La declaración `export` expone porciones de código para hacerlas accesibles desde otros módulos, con posibilidad de leerlas pero no de modificarlas.
+
+### Exports
+
+A través de la cláusula `export` es posible definir de distinas maneras qué partes del módulo serán accesibles desde otros.
+
+#### Exportar variables o funciones con nombre
+
+```javascript
+export const pi = 3.14;
+export function foo() {};   
+```
+
+#### Exportar como default
+
+```javascript
+export default 100;         
+export default function foo() {};   
+```
+
+#### Exportar una variable con un nuevo nombre
+
+```javascript
+const pi = 3.14;
+export { pi as shortPi };
+```
+
+#### Exportar parte de otro módulo
+
+```javascript
+export { pi as piNumber } from 'math';
+```
+
+#### Exportar otro módulo completo
+
+```javascript
+export * from 'math';   
+```
+
+### Imports
+
+#### Importar sin redefinición local
+
+```javascript
+import 'jquery';  
+```
+#### Importar el default export
+
+```javascript
+import $ from 'jquery';
+```
+
+#### Importar una variable con nombre
+
+```javascript
+import { $ } from 'jquery';   
+```
+
+#### Importar y renombrar una variable con nombre
+
+```javascript
+import { $ as jQuery } from 'jquery';
+```
+
+#### Importar un módulo entero
+
+```javascript
+import * as Math from 'math';
+```
