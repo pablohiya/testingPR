@@ -50,6 +50,8 @@ export * from 'math';
 
 ### Imports
 
+La sentencia `import` permite ligar al contexto local del módulo, variables exportadas por otro.
+
 #### Importar sin redefinición local
 
 ```javascript
