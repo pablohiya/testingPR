@@ -4,7 +4,7 @@
 
 Hacía falta contar con una estructura de datos capaz de mapear valores arbitrarios a otros valores. Lo mejor que se podía lograr con ES5 era un mapeo de strings a valores arbitrarios, por medio del uso de objetos. ES6 estandariza la requerida funcionalidad por medio del siguiente objeto:
 
-- Map
+- new Map([iterable])
 
 El nuevo objeto Map introducido con ES6 permite utilizar valores arbitrarios como clave (incluso objetos) y es por eso gratamente bienvenido. Otras de las ventajas en comparación con el uso de objetos, es que tanto iterar como obtener el tamaño de un Map es directo, y además no hereda propiedades adicionales.
 
@@ -12,7 +12,7 @@ Utilizar objetos convencionales sigue siendo la opción más recomendable hoy en
 
 ## Map
 
-El objeto Map([iterable]) es un simple mapeo clave/valor. Se crea por medio del operador 'new' y el parametro opcional 'iterable' (arreglo u objeto iterable), y cuenta con una serie de métodos para su manipulación, como set() y get().
+El objeto Map([iterable]) es un simple mapeo clave/valor. Se crea por medio del operador 'new' y el parametro opcional 'iterable' (arreglo u objeto iterable), y cuenta con una serie de métodos para su manipulación, como set() y get(), al igual que los anteriormente mencionados keys(), values y entries() para arreglos.
 
 ### ES5
 ```javascript
