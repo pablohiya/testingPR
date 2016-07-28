@@ -81,7 +81,7 @@ numbers.forEach( function(n, index) {
 
 ### ES6
 
-Podemos usar `Array.filter()` para iterar sobre cada elemento, igual que con la funcion `map()`. Pero la funcion que usaremos en `filter()` debe dar como resultado `true` para que los elementos pasen al nuevo array, o `false` para evitarlos. Al igual que con `map()`, **no se afecta el array original**.
+Podemos usar `Array.filter()` para iterar sobre cada elemento, igual que con la función `map()`. Pero la función que usaremos en `filter()` debe dar como resultado `true` para que los elementos pasen al nuevo array, o `false` para evitarlos. Al igual que con `map()`, **no se afecta el array original**.
 
 ```javascript
 let evens = plusone.filter((n) => n % 2 === 0 );
@@ -129,12 +129,12 @@ const nombresUnicosMayusculas = (nombres) => {
 }
 
 
-// ejecuto la funcion
+// ejecuto la función
 const resultado = nombresUnicosMayusculas(nombres);
 
 console.log('3 - El array original permance sin cambios: ',nombres);
 console.log('--------------------------------------------');
-console.log('4 - El resultado de la funcion es: ', resultado);
+console.log('4 - El resultado de la función es: ', resultado);
 ```
 
 [JSBin](https://jsbin.com/xewupo/1/edit?js,console) con la solucion
