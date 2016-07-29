@@ -80,3 +80,57 @@ import { $ as jQuery } from 'jquery';
 ```javascript
 import * as Math from 'math';
 ```
+## Desafíos
+
+1- Utilizando el default export, crear un módulo que exporte una función `myFunc`. Importar dicha función desde un módulo distinto, e invocarla.
+
+
+#### Solución
+```javascript
+//------ aModule.js ------
+export default function () {
+
+}
+
+//------ anotheModule.js ------
+import myFunc from 'aModule';
+myFunc();
+```
+
+2- Crear un módulo con una serie de constantes. Exportar cada una a través de diferentes 'named exports'. Desde otro módulo, importar alguna de ellas.
+
+#### Solución
+```javascript
+//------ constants.js ------
+export const one = 1;
+export const two = 2;
+export const three = 3;
+export const four = 4;
+
+//------ anotheModule.js ------
+import { one, two } from 'constants';
+console.log(one + two);
+//3
+```
+
+3- Crear un módulo que importe el anteriormente creado de constantes, agregue una serie de nuevas, y exporte el conjunto conformado por las importadas y las nuevas creadas.
+
+#### Solución
+```javascript
+//------ constants.js ------
+export const one = 1;
+export const two = 2;
+export const three = 3;
+export const four = 4;
+
+//------ constants2.js ------
+export * from 'constants';
+export const five = 5;
+export const six = 6;
+
+//------ anotheModule.js ------
+import { one, five } from 'constants2';
+console.log(one + five);
+//6
+
+```
