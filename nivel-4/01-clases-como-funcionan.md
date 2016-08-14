@@ -1,6 +1,6 @@
 # Funcionan distinto las clases en ES6?
 ## Introducción: Clases en JavaScript
-La utilizaicón de clases y del paradigma orientado a objetos en programación es una forma de proveer mayor reutilización a través de agrupar funcionalidad por su cohesión semántica.
+La utilizacion de clases y del paradigma orientado a objetos en programación es una forma de proveer mayor reutilización a través de agrupar funcionalidad por su cohesión semántica.
 Aunque las clases están presentes en diversos lenguajes, en JavaScript no lo estuvieron hasta la especificación de ES6. Sin embargo, es necesario aclarar que en este estándar, las clases no existen realmente, son sólo una representación más clara, ordenada, y simple de utilizar de la misma funcionalidad provista hasta ES5.
 
 ## Clases en ES5
