@@ -2,13 +2,11 @@
 
 ## Introducción    
    
-   ECMAScript 6 centra sus esfuerzos en mejorar la utilizacion de los objetos, lo cual tiene sentido ya que en Javascript todos los valores tienen un tipo de objeto. Adicionalmente, la cantidad de objetos utilizados en Javascript aumenta a medida que la complejidad de la aplicacion crece.   
-
-ECMAScript 6 mejora la utilizacion de los objetos de diferentes maneras, desde simplificando la sintaxis como tambien la manipulacion de ellos.      
+   ECMAScript 6 centra sus esfuerzos en mejorar la utilizacion de los objetos, lo cual tiene sentido ya que en Javascript todos los valores tienen un tipo de objeto. Adicionalmente, la cantidad de objetos utilizados en Javascript aumenta a medida que la complejidad de la aplicacion crece, por eso es tan importante dicha mejora por parte de ES6 simplificando la sintaxis como tambien la manipulacion de los objetos.
 
 ## Property Shorthand   
    
-En ES5, los objetos literales eran simplemente colecciones de pares nombre-valor. Esto significa que habia una duplicacion cuando se inicializaban las propiedades. Por ejemplo:   
+En ES5, los objetos eran simplemente colecciones de pares nombre-valor. Esto significa que habia una duplicacion cuando se inicializaban las propiedades.  
    
 ### ES5:   
    
@@ -23,7 +21,7 @@ function createPerson(name, age) {
 
 La funcion **createPerson** crea un objeto donde el nombre de las propiedades son iguales a los parametros de la funcion. El resultado es la duplicación de *name* y *age*, donde la clave *name* en el objeto retornado tiene asignado el valor contenido en la variable *name* y la clave *age* en el objeto retornado tiene asignado el valor contenido en la variable *age*.
 
-En ECMAScript 6, se puede eliminar la duplicacion existente que existe entre la propiedad y los parametros de entrada de la funcion utilizando la forma **property shorthand**. Por ejemplo, **createPerson()** puede reescribirse en ES6 de la siguiente manera:
+En ECMAScript 6, se puede eliminar la duplicacion existente que existe entre las propiedades y los parametros de entrada de la funcion utilizando la forma **property shorthand**. Por ejemplo, **createPerson()** puede reescribirse en ES6 de la siguiente manera:
 
 ### ES6:   
    
@@ -38,11 +36,11 @@ function createPerson(name, age) {
 
 Cuando una propiedad en un objeto posee solo el nombre declarado, el motor de Javascript busca en el ambito variables con el mismo nombre. Si encuentra una, ese valor es asignado al mismo nombre del objeto. En este ejemplo, la propiedad *name* es asignada con al valor de la variable local *name*.
 
-*Esta extension permite que la inicializacion de los objetos sea mas rapida y elimina los errores de naming.*
+*Esta extension permite que la inicializacion de los objetos sea mas rapida y elimina los posibles errores de naming.*
 
-## Assign Methods
+## Asignación de métodos
 
-EMACScript 6 tambien mejora la sintaxis para la asignacion de metodos a objetos. En EMACScript 5, se debia especificar el nombre y despues la declaracion completa de la funcion para agregar un metodo a un objeto.
+EMACScript 6 tambien mejora la sintaxis para la asignación de métodos a objetos. En EMACScript 5, se debia especificar el nombre y despues la declaracion completa de la funcion para agregar un metodo a un objeto.
 
 ### ES5:
 
