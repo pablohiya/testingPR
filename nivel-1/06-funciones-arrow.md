@@ -106,7 +106,7 @@ console.log(person.getName()); // <- Luis Miguel
    
 *Notemos que los paréntesis sólo están alrededor de la función flecha y no llegan hasta ("Luis Miguel").*
 
-## Funciones Arrow y arrays   
+## Funciones Arrows y arrays   
    
 La simple sintaxis que brinda las funciones arrow las hace ideal para la manipulacion de arreglos. Por ejemplo, si se desea ordenar un arreglo usando un comparador custom, escribiriamos algo asi:   
    
