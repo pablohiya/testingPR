@@ -5,14 +5,14 @@
 Tipo de dato unico e inmutable que se utiliza como un identificador para las propiedades del objeto. El simbolo puede tener una descripcion opcional, pero solo con fines de depuración.
 
 ### ES5:
-```
+```javascript
 // no equivalent in ES5
 
 ```
 
 
 ### ES6
-```
+```javascript
 Symbol("foo") !== Symbol("foo") // true
 const foo = Symbol()
 const bar = Symbol()
