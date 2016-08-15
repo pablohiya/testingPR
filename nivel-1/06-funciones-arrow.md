@@ -45,8 +45,9 @@ var sum = (n1, n2) => n1 + n2;
 Un caso similar sería si la función no recibe ningún argumento, en ese caso van los paréntesis solos, como en el siguiente ejemplo:   
     
    
-### ES5:
-
+### ES5:   
+    
+```javascript
 // Que sería lo mismo que hacer esto:
 var getName = function () {
   return "Luis Miguel";
