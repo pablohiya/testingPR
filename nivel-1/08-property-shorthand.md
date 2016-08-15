@@ -23,7 +23,7 @@ function createPerson(name, age) {
 
 La funcion **createPerson** crea un objeto donde el nombre de las propiedades son iguales a los parametros de la funcion. El resultado es la duplicación de *name* y *age*, donde la clave *name* en el objeto retornado tiene asignado el valor contenido en la variable *name* y la clave *age* en el objeto retornado tiene asignado el valor contenido en la variable *age*.
 
-En ECMAScript 6, se puede eliminar la duplicacion existente que existe entre la propiedad y los parametros de entrada de la funcion utilizando **property shorthand**. Por ejemplo, **createPerson()** puede reescribirse en ES6 de la siguiente manera:
+En ECMAScript 6, se puede eliminar la duplicacion existente que existe entre la propiedad y los parametros de entrada de la funcion utilizando la forma **property shorthand**. Por ejemplo, **createPerson()** puede reescribirse en ES6 de la siguiente manera:
 
 ### ES6:   
    
@@ -131,35 +131,76 @@ console.log(person["last name"]);       // "Zakas"
 
 ### Desafíos
 
-**Desafío 1**<br>
-Dado el siguiente Array:
+**Desafío 1**
 
-`const arr= [100,99,98]`
+Dado el siguiente fragmento de ECMAScript 5:
 
-Imprimir todas sus entradas con el formato `'<index> -> <valor>`
-
-**Solución**
-
-```
-for (let [index, elem] of arr.entries()) {
-    console.log( [index,'->',elem].join('') );
+```javascript
+function createMonster(name, power) {
+  return { type: 'Monster', name: name, power: power };
+}
+function createWitch(name) {
+  return { type: 'Witch', name: name };
 }
 ```
 
-**Desafío 2**<br>
-Dado el siguiente Array:
-
-`const items = [ { word:'foo', count:1 }, { word:'bar', count:3 }, ];`
-
-Imprimir la suma de todos objetos con el formato `Total: N`
+Reescribirlo aplicando **property shorthand**.
 
 **Solución**
 
+```javascript
+function createMonster(name, power) {
+  return { type: 'Monster', name, power };
+}
+function createWitch(name) {
+  return { type: 'Witch', name };
+}
 ```
-let items = [ ['foo', 1], ['bar', 3] ],
-      sum = 0;
-items.forEach(([word, count]) => {
-    sum += count;
-});
-console.log(['Total: ',sum].join(''));
+
+**Desafío 2**
+
+Crear una function **getCar** que reciba como 3 valores como parametro: make, model y value. Esta funcion debe retornar un objeto con las siguientes propiedades:
+- make
+- model
+- value
+- función llamada depreciate, que le reste a la propiedad value un numero arbitrario elegido por el usuario.
+
+Una vez implementada la funcion:
+1) Declarar una variable car y asignarle getCar pasando los correspondientes parametros como string. 
+2) Imprimir la variable car
+3) Llamar al metodo depreciate
+4) Imprimir la variable car nuevamente
+
+**Solución**
+
+```javascript
+function getCar(make, model, value) {
+    return {
+        // with property value shorthand
+        // syntax, you can omit the property
+        // value if key matches variable
+        // name
+        make,  // same as make: make
+        model, // same as model: model
+        value, // same as value: value
+        // Method definition shorthand syntax
+        // omits `function` keyword & colon
+        depreciate() {
+            this.value -= 2500;
+        }
+    };
+}
+
+let car = getCar('Kia', 'Sorento', 40000);
+
+// output: {
+//     make: 'Kia',
+//     model:'Sorento',
+//     value: 40000,
+//     depreciate: function()
+// }
+console.log(car);
+car.depreciate();
+// output: 37500
+console.log(car.value);
 ```
