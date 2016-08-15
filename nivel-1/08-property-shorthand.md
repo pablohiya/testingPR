@@ -159,17 +159,17 @@ function createWitch(name) {
 
 **Desafío 2**
 
-Crear una function **getCar** que reciba como 3 valores como parametro: make, model y value. Esta funcion debe retornar un objeto con las siguientes propiedades:
+Crear una funcion **getCar** que reciba 3 valores como parametros: make, model y value. Esta funcion debe retornar un objeto con las siguientes propiedades y funcion:
 - make
 - model
 - value
 - función llamada depreciate, que le reste a la propiedad value un numero arbitrario elegido por el usuario.
 
-Una vez implementada la funcion:
-1) Declarar una variable car y asignarle getCar pasando los correspondientes parametros como string. 
-2) Imprimir la variable car
-3) Llamar al metodo depreciate
-4) Imprimir la variable car nuevamente
+Una vez implementada la funcion:   
+1) Declarar una variable car y asignarle getCar pasando los correspondientes parametros como string.     
+2) Imprimir la variable car   
+3) Llamar al metodo depreciate   
+4) Imprimir la variable car nuevamente   
 
 **Solución**
 
