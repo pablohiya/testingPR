@@ -170,7 +170,7 @@ console.log(comparator instanceof Function);    // true
 
 Implementar en ES6 una función arrow `max()` que acepte dos numeros como argumento y que devuelva el mayor de ellos.
 
-Solución   
+**Solución**  
 
 ```javascript
 let max = (a, b) => a > b ? a : b;
@@ -182,7 +182,7 @@ Implementar en ES6 una funcion que permita el filtrar en un arreglo todos los nu
    
 `var arr = [5, 6, 13, 0, 1, 18, 23];`   
    
-Solución   
+**Solución**  
 
 ```javascript
 var even = arr.filter(v => v % 2 == 0); // [6, 0, 18]
