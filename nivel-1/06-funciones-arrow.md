@@ -6,61 +6,84 @@ Como su nombre lo indica, son funciones definidas usando una flecha **=>**, pero
 
 ## Sintaxis   
 
-La sintaxis de las funciones flecha tiene diferentes formas, dependiendo de la tarea que se quiera realizar. Todas las variaciones comienzan con los argumentos de la función, seguidos por la flecha, seguidos por el contenido de la función. Tanto los argumentos como el contenido pueden tener diferentes formas dependiendo de su uso. En el siguiente ejemplo, la funcion flecha toma un único argumento y simplemente lo devuelve.
+La sintaxis de las funciones flecha tiene diferentes formas, dependiendo de la tarea que se quiera realizar. Todas las variaciones comienzan con los argumentos de la función, seguidos por la flecha, seguidos por el contenido de la función. Tanto los argumentos como el contenido pueden tener diferentes formas dependiendo de su uso. En el siguiente ejemplo, la funcion flecha toma un único argumento y simplemente lo devuelve.   
+
+### ES5   
 
 ```javascript
-var reflect = value => value;
-
-// Que sería lo mismo que hacer esto:
+// Que sería lo mismo que hacer esto: 
 var reflect = function (value) {
   return value;
 };
 ```   
-
+    
+### ES6:
+   
+```javascript
+var reflect = value => value;  //ES6
+```
+   
 *Cuando las funciones flecha reciben un solo argumento, ese único argumentopuede ser utilizado directamente sin necesidad de agregar los paréntesis. La flecha viene después y la expresión final se evalúa y es retornada. No es necesario declarar el return de manera explícita, la función flecha retorna el primer argumento que encuentre.*  
    
 En caso la función reciba más de un argumento, entonces sí debemos incluir los paréntesis, como en el siguiente ejemplo:
+   
+### ES5:
 
 ```javascript
-var sum = (n1, n2) => n1 + n2;
-
 // Que sería lo mismo que hacer esto:
 var sum = function (n1, n2) {
   return n1 + n2;
 };   
-```
+```   
 
-Un caso similar sería si la función no recibe ningún argumento, en ese caso van los paréntesis solos, como en el siguiente ejemplo:   
+### ES6:
    
 ```javascript
-var getName = () => "Luis Miguel";
+var sum = (n1, n2) => n1 + n2;
+```   
+
+Un caso similar sería si la función no recibe ningún argumento, en ese caso van los paréntesis solos, como en el siguiente ejemplo:   
+    
+   
+### ES5:
 
 // Que sería lo mismo que hacer esto:
 var getName = function () {
   return "Luis Miguel";
 };
-```
+```   
+
+### ES6:
+   
+```javascript
+var getName = () => "Luis Miguel";
+```   
 
 Tambien podemos utilizar la sintaxis tradicional, como en el ejemplo a continuacion:   
    
+### ES5:   
+   
 ```javascript
-var sum = (n1, n2) => {
-  return n1 + n2;
-};
-
 // Que sería lo mismo que hacer esto:
 var sum = function (n1, n2) {
   return n1 + n2;
 }
 ```   
    
+### ES6:
+   
+```javascript
+var sum = (n1, n2) => {
+  return n1 + n2;
+};
+
 *Podemos tratar el contenido de las llaves casi como lo hacíamos de la manera tradicional, con la excepción de que el valor arguments no estará disponible.*
 
 En el caso de retornar un objeto, este se debe incluir entre parentesis:   
    
+### ES5:
+   
 ```javascript
-var getTempItem = id => ({id: id, name: "Temp"});
-
 // Que sería lo mismo que hacer esto:
 var getTempItem = function (id) {
   return {
@@ -70,6 +93,12 @@ var getTempItem = function (id) {
 };
 ```   
    
+### ES6:
+   
+```javascript
+var getTempItem = id => ({id: id, name: "Temp"});
+```   
+
 *Esto se hace por que al encapsular el objeto entre paréntesis declaramos que las llaves son el objeto y no que pertenecen al cuerpo de la función.*   
    
 ## Expresiones de función invocadas inmediatamente (IIFE)   
