@@ -17,5 +17,7 @@ var reflect = function (value) {
 };
 ```   
 
-Cuando las funciones flecha reciben un solo argumento, ese único argumentopuede ser utilizado directamente sin necesidad de agregar los paréntesis. La flecha viene después y la expresión final se evalúa y es retornada. No es necesario declarar el return de manera explícita, la función flecha retorna el primer argumento que encuentre`   
+```html
+   <font color="green">Cuando las funciones flecha reciben un solo argumento, ese único argumentopuede ser utilizado directamente sin necesidad de agregar los paréntesis. La flecha viene después y la expresión final se evalúa y es retornada. No es necesario declarar el return de manera explícita, la función flecha retorna el primer argumento que encuentre </font>
+```  
 
