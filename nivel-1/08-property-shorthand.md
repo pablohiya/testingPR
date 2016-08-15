@@ -4,7 +4,7 @@
    
    ECMAScript 6 centra sus esfuerzos en mejorar la utilizacion de los objetos, lo cual tiene sentido ya que en Javascript todos los valores tienen un tipo de objeto. Adicionalmente, la cantidad de objetos utilizados en Javascript aumenta a medida que la complejidad de la aplicacion crece.   
 
-    ECMAScript 6 mejora la utilizacion de los objetos de diferentes maneras, desde simplificando la sintaxis como tambien la manipulacion de ellos.      
+ECMAScript 6 mejora la utilizacion de los objetos de diferentes maneras, desde simplificando la sintaxis como tambien la manipulacion de ellos.      
 
 ## Property Shorthand   
    
