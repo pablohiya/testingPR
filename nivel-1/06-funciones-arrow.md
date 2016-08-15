@@ -166,7 +166,9 @@ console.log(comparator instanceof Function);    // true
    
 ## Desafios   
 
-1. Implementar en ES6 una función arrow `max()` que acepte dos numeros como argumento y que devuelva el mayor de ellos.
+**Desafío 1**
+
+Implementar en ES6 una función arrow `max()` que acepte dos numeros como argumento y que devuelva el mayor de ellos.
 
 Solución   
 
@@ -174,7 +176,9 @@ Solución
 let max = (a, b) => a > b ? a : b;
 ```   
 
-2. Implementar en ES6 una funcion que permita el filtrar en un arreglo todos los numeros pares que contiene el mismo. Para ello utilizar el metodo **filter** presente actualmente en el objeto array.   
+**Desafío 2**
+
+Implementar en ES6 una funcion que permita el filtrar en un arreglo todos los numeros pares que contiene el mismo. Para ello utilizar el metodo **filter** presente actualmente en el objeto array.   
    
 `var arr = [5, 6, 13, 0, 1, 18, 23];`   
    
