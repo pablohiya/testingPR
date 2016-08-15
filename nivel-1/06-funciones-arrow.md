@@ -10,9 +10,8 @@ La sintaxis de las funciones flecha tiene diferentes formas, dependiendo de la t
 
 ### ES5   
 
-```javascript
-// Que sería lo mismo que hacer esto: 
-var reflect = function (value) {
+```javascript 
+var reflect = function (value) {  //Se puede escribir en ES6 asi tambien
   return value;
 };
 ```   
@@ -30,7 +29,6 @@ En caso la función reciba más de un argumento, entonces sí debemos incluir lo
 ### ES5:
 
 ```javascript
-// Que sería lo mismo que hacer esto:
 var sum = function (n1, n2) {
   return n1 + n2;
 };   
@@ -46,9 +44,8 @@ Un caso similar sería si la función no recibe ningún argumento, en ese caso v
     
    
 ### ES5:   
-    
+
 ```javascript
-// Que sería lo mismo que hacer esto:
 var getName = function () {
   return "Luis Miguel";
 };
@@ -65,7 +62,6 @@ Tambien podemos utilizar la sintaxis tradicional, como en el ejemplo a continuac
 ### ES5:   
    
 ```javascript
-// Que sería lo mismo que hacer esto:
 var sum = function (n1, n2) {
   return n1 + n2;
 }
@@ -77,7 +73,8 @@ var sum = function (n1, n2) {
 var sum = (n1, n2) => {
   return n1 + n2;
 };
-
+```   
+   
 *Podemos tratar el contenido de las llaves casi como lo hacíamos de la manera tradicional, con la excepción de que el valor arguments no estará disponible.*
 
 En el caso de retornar un objeto, este se debe incluir entre parentesis:   
