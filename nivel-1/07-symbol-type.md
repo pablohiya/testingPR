@@ -31,17 +31,17 @@ Object.getOwnPropertySymbols(obj) // [ foo, bar ]
 **Desafío 1**  
 Dado la siguiente lista de sentencias:
 
-`typeof Symbol() === 'symbol'`
-`typeof Symbol('foo') === 'symbol'`
-`typeof Symbol() === 123`
-`typeof Symbol.iterator === 'symbol'`
+`typeof Symbol() === 'symbol'`   
+`typeof Symbol('foo') === 'symbol'`   
+`typeof Symbol() === 123`   
+`typeof Symbol.iterator === 'symbol'`   
 
 Evaluar y contestar cual seria la respuesta de cada una de ellas.
 
 **Solución**  
    
-`typeof Symbol() === 'symbol'`   // true
-`typeof Symbol('foo') === 'symbol'`  //true
-`typeof Symbol() === 123`  // false
-`typeof Symbol.iterator === 'symbol'`  //true   
+`typeof Symbol() === 'symbol'`   // true   
+`typeof Symbol('foo') === 'symbol'`  //true   
+`typeof Symbol() === 123`  // false    
+`typeof Symbol.iterator === 'symbol'`  //true      
    
