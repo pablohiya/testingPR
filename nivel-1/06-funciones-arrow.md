@@ -22,7 +22,7 @@ var reflect = function (value) {  //Se puede escribir en ES6 asi tambien
 var reflect = value => value;  //ES6
 ```
    
-*Cuando las funciones flecha reciben un solo argumento, ese único argumentopuede ser utilizado directamente sin necesidad de agregar los paréntesis. La flecha viene después y la expresión final se evalúa y es retornada. No es necesario declarar el return de manera explícita, la función flecha retorna el primer argumento que encuentre.*  
+*Cuando las funciones flecha reciben un solo argumento, ese único argumento puede ser utilizado directamente sin necesidad de agregar los paréntesis. La flecha viene después y la expresión final se evalúa y es retornada. No es necesario declarar el return de manera explícita, la función flecha retorna el primer argumento que encuentre.*  
    
 En caso la función reciba más de un argumento, entonces sí debemos incluir los paréntesis, como en el siguiente ejemplo:
    
