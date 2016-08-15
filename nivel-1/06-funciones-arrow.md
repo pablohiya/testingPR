@@ -136,3 +136,23 @@ console.log(comparator instanceof Function);    // true
 ```   
    
 *The console.log() output reveals that both typeof and instanceof behave the same with arrow functions as they do with other functions.*
+   
+## Desafios   
+
+1. Implementar en ES6 una función arrow `max()` que acepte dos numeros como argumento y que devuelva el mayor de ellos.
+
+Solución   
+
+```javascript
+let max = (a, b) => a > b ? a : b;
+```   
+
+2. Implementar en ES6 una funcion que permita el filtrar en un arreglo todos los numeros pares que contiene el mismo. Para ello utilizar el metodo **filter** presente actualmente en el objeto array.   
+   
+`var arr = [5, 6, 13, 0, 1, 18, 23];`   
+   
+Solución   
+
+```javascript
+var even = arr.filter(v => v % 2 == 0); // [6, 0, 18]
+```   
