@@ -157,9 +157,9 @@ foo(2)
 ```
 
 
-Usos prácticos del destructuring.
+##Usos prácticos del destructuring.
 
-Retornar múltiples valores en una función:
+###Retornar múltiples valores en una función:
 ```javascript
 function calcularDimensiones(){
   return [10, 5];
@@ -170,7 +170,7 @@ console.log(ancho);
 console.log(alto);
 // <- 5
 ```
-ES5
+####ES5
 ```javascript
 function calcularDimensiones(){
   return {ancho: 10, alto: 5};
@@ -183,7 +183,7 @@ console.log(obj.alto);
 ```
 
 
-Recibir parámetros de una función como un objeto puede ser muy útil para configuraciones, por ejemplo al hacer un llamado AJAX.
+###Recibir parámetros de una función como un objeto puede ser muy útil para configuraciones, por ejemplo al hacer un llamado AJAX.
 ```javascript
 function ajax({ url = 'localhost', puerto = 80, metodo = 'GET' }) {
   console.log('URL:', url, 'Puerto:', puerto, 'Método', metodo);
@@ -200,7 +200,7 @@ ajax({
 });
 // <- URL: localhost Puerto: 80 Método: POST
 ```
-ES5
+####ES5
 ```javascript
 function ajax(config){
   var url, puerto, metodo;
@@ -215,7 +215,7 @@ function ajax(config){
 }
 ```
 
-Podemos utilizarlo también para mapear atributos en un bucle.
+###Podemos utilizarlo también para mapear atributos en un bucle.
 ```javascript
 var libros = [
   { titulo: 'Titulo 1', autor: 'Autor 1' },
@@ -230,11 +230,12 @@ libros.forEach(function( { titulo, autor } ) {
 
 
 
-### Desafíos
+## Desafíos
 
-**Desafío 1**
+###Desafío 1
 Dado la siguiente lista de sentencias:
 
+```javascript
 let [a = 'Bar', b] = [, 'Foo'];
 console.log(a);
 
@@ -246,24 +247,25 @@ console.log(c);
 })( { b: 'Bar' } );
 
 (function ( { bar: baz } ){
-  console.log(bar); 
+  console.log(bar);
 })( { bar : 'a' } );
-
+```
 
 Evaluar y contestar cual seria la respuesta de cada uno de los llamados a console.log.
 
 **Solución**
-Bar
-Foo
-undefined
-Exception: bar is not defined
+```javascript
+//Bar
+//Foo
+//undefined
+//Exception: bar is not defined
+```
 
 
 
-
-**Desafío 2**
+###Desafío 2
 Dado la siguiente lista de sentencias:
-
+```javascript
 function calcularCoordenadas(){
   console.log(x, y);
 }
@@ -272,12 +274,13 @@ calcularCoordenadas({ coordX: 30, coorY:15 }); // esperado: 30, 10
 calcularCoordenadas({ coordY: 30 }); // esperado: 15, 30
 calcularCoordenadas({ z: 2 }); // esperado: 15, 10
 calcularCoordenadas(); // esperado: 15, 10
-
+```
 
 Puedes reescribir la función calcularCoordenadas, utilizando destructuring, para que todas las sentencias impriman las coordenadas esperadas en cada caso?
 
 **Solución**
-
+```javascript
 function calcularCoordenadas( { coordX: x = 15, coordY: y = 10 } = {} ){
   console.log(x, y);
 }
+```
